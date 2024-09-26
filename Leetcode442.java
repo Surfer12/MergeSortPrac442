@@ -29,6 +29,7 @@ Each element in nums appears once or twice. */
 
 import java.util.Arrays;
 import java.util.ArrayList;
+import java.util.*;
 
 public class Leetcode442 {
 
@@ -37,12 +38,11 @@ public class Leetcode442 {
     public int[] returnArraylist;
 
 
-    public int[] anArrayListOfDuplicates(int[] givenArray) 
-    {
+    public int[] anArrayListOfDuplicates(int[] givenArray) {
     for(int n:givenArray){
-        if (givenArraylist.contains(n)) {
+        if (n == n+1) {
 
-            returnArraylist.add(n);
+        
         }
         return returnArraylist;
     }
