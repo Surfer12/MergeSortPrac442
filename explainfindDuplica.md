@@ -4,14 +4,14 @@ Certainly! I'll explain the `findDuplicates` method step by step, focusing on th
 public List<Integer> findDuplicates(int[] nums) {
     Set<Integer> seen = new HashSet<>();
     List<Integer> duplicates = new ArrayList<>();
-    for (int num : nums) {
-        if (seen.contains(num)) {
-            duplicates.add(num);
-        } else {
-            seen.add(num);
+    for (int num : nums) { // for each number in the array
+        if (seen.contains(num)) { // if the number is in the seen set
+            duplicates.add(num); // add the number to the duplicates list
+        } else { // if the number is not in the seen set
+            seen.add(num); // add the number to the seen set
         }
     }
-    return duplicates;
+    return duplicates; // return the duplicates list
 }
 ```
 
